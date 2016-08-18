@@ -1,0 +1,224 @@
+/* Styles go here */
+/*http://www.tagindex.com/color/pattern/057.html*/
+
+/*body, h1, h2, h3, h4, h5, h6, p, address, blockquote, pre, div, dl, dt, dd, ol, ul, li, th, td, form, fieldset, input, textarea {
+  margin: 0;
+  padding: 0;
+}*/
+
+body {
+  -webkit-text-size-adjust: 100%;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.contents {
+  margin: 0 auto;
+  border: 7px solid;
+  border-color: white;
+  width: 960px;
+}
+
+/*=====================
+ヘッダー
+=====================*/
+
+header {
+  display: table;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header nav{
+  width: 400px;
+  margin-left: auto;
+}
+
+header ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-left: auto;
+}
+
+header li{
+  float: left;
+  width: 100px;
+}
+
+header li:hover{
+  background-color: MistyRose;
+}
+
+header li.current{
+  background-color: LightPink;
+}
+
+header a{
+  text-align: center;
+  display:block;
+  line-height: 90px;
+  text-decoration: none;
+  color: black;
+}
+
+.header-title {
+  float: left;
+  margin-top: 13px;
+  margin-left: 20px;
+  height: 100%;
+  vertical-align: bottom;
+}
+
+/*=====================
+メインビジュアル
+=====================*/
+
+.main-visual {
+  margin-top: 5px;
+  box-shadow:5px 5px 10px;
+}
+
+/*=====================
+パンくずリスト
+=====================*/
+
+.breadcrumbs ol {
+  margin: 16px auto 0;
+  padding: 0px;
+}
+.breadcrumbs li {
+  display: inline;
+  list-style-type: none;
+}
+.breadcrumbs li:before {
+  content: " > ";
+}
+.breadcrumbs li:first-child:before {
+  content:"";
+}
+.breadcrumbs a {
+  color: black;
+}
+
+/*=====================
+コンテンツエリア
+=====================*/
+
+.cnts {
+  zoom: 1;
+  margin: 16px auto 0;
+  width: 960px;
+}
+
+/*=====================
+ローカルナビ
+=====================*/
+
+.cnts .cnts-sub {
+  float: left;
+  width: 240px;
+}
+
+.lnav ul {
+  padding: 0 0 8px;
+  border-radius: 5px;
+  background: #fafafa;
+  list-style-type: none;
+}
+
+.lnav li:first-child {
+  border-bottom: 2px solid #e94b41;
+}
+
+.lnav li:first-child a:after {
+  border: none;
+}
+
+.lnav li:last-child a:after {
+  border: none;
+}
+
+.lnav li a {
+  display: block;
+  position: relative;
+  padding: 17px 0 20px 40px;
+  line-height: 1.57;
+  color: black;
+}
+
+.lnav li a:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 11px;
+  border-bottom: 1px dotted #a49d96;
+  width: 215px;
+}
+
+.lnav li.current a{
+  color: #e94b41;
+}
+
+.lnav li.current a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  margin-top: -5px;
+  border-right: 3px solid #e94b41;
+  border-bottom: 3px solid #e94b41;
+  width: 6px;
+  height: 6px;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+/*=====================
+ メインコンテンツ
+=====================*/
+
+.cnts .cnts-main {
+    width: 720px;
+}
+
+section {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.outline {
+    zoom: 1;
+    border-top: 2px solid #dedede;
+    border-bottom: 2px solid #dedede;
+    width: 100%;
+    background: #f5f5f5;
+}
+/*
+.outline dt {
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+    padding: 19px;
+    border-top: 1px dotted #a19a93;
+    width: 200px;
+    font-weight: 700;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.outline dd {
+    box-sizing: border-box;
+    float: right;
+    padding: 19px;
+    border-top: 1px dotted #a19a93;
+    border-left: 1px solid #d9d9d9;
+    width: 520px;
+    background: #fff;
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}*/
